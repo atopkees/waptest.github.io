@@ -1,0 +1,290 @@
+/* 
+  -----------------------------------
+  Slide-Out Panel
+  by Project Seven Development
+  www.projectseven.com
+  CSS Styles
+  -----------------------------------
+*/
+
+.p7SOP.sop-borders.sop-from-left .sop-wrapper {
+	border-right: 1px solid #000;
+}
+.p7SOP.sop-borders.sop-from-right .sop-wrapper {
+	border-left: 1px solid #000;
+}
+.sop-wrapper {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: inherit;
+}
+.sop-content {
+	padding: 32px 24px 24px 24px;
+}
+.p7SOP.sop-nopad .sop-content {
+	padding: 0px;
+}
+.sop-content h1,
+.sop-content h2,
+.sop-content h3,
+.sop-content h4 {
+	margin: 0px;
+}
+
+.sop-close {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	background-color: #222;
+	border-radius: 100%;
+	padding: 0 .15em;
+}
+.sop-close.sop-dark {
+	background-color: #FFF;
+}
+.sop-close.sop-light {
+	background-color: #222;
+}
+.sop-close a {
+	color: inherit;
+	display: block;
+}
+.sop-close img {
+	vertical-align: middle;
+	opacity: .5;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+}
+.sop-close img:hover {
+	opacity: 1;
+}
+.sop-close i {
+	display: none;
+}
+
+/*
+************************************
+Fixed Close and Scroll to Top Icons
+************************************
+*/
+.sop-fixed-close .sop-close-icon {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    top: -100px;
+    z-index: 999;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease .3s;
+	transition: opacity .5s ease .3s;
+}
+.sop-fixed-close.open .sop-close-icon {
+	top: 0px;
+	right: 14px;
+	opacity: 1;
+}
+
+.sop-fixed-close .sop-content {
+	padding: 20px 46px 20px 36px;
+}
+.sop-scroll-arrow {
+	position: absolute;
+	top: 100px;
+	right: 22px;
+	z-index: 9999;
+	opacity: 0;
+	margin-top: 50px;
+	-webkit-transition: opacity .5s ease, margin-top .5s ease;
+	transition: opacity .5s ease, margin-top .5s ease;
+}
+.stt-on {
+	opacity: .7;
+	margin-top: 0px;
+}
+.sop-scroll-arrow i {
+	display: none;
+}
+.sop-scroll-arrow:hover {
+	opacity: 1;
+}
+.p7SOP.sop-noscript .sop-scroll-arrow {
+    display: none;	
+}
+body.sop-active {
+	overflow-y: hidden;
+}
+
+
+/*Colors*/
+.sop-wrapper {
+	background-color: rgb(180,180,160);
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: inherit;
+}
+.sop-trans .sop-wrapper {
+	background: rgba(180,180,160,0.95);
+}
+
+.sop-wine .sop-wrapper,
+.sop-trigger.sop-button.sop-wine {
+	background-color: #C16162;
+	color: #000;
+}
+.sop-wine.sop-trans .sop-wrapper {
+	background: rgba(193,70,72,0.95);
+}
+.sop-trigger.sop-button.sop-wine:hover {
+	background-color: rgb(100,100,80);
+	color: #FFF;
+}
+.sop-black .sop-wrapper,
+.sop-trigger.sop-button.sop-black {
+	background-color: #151515;
+	color: #FFF;
+}
+.sop-black.sop-trans .sop-wrapper {
+	background: rgba(0,0,0,0.95);
+}
+.sop-trigger.sop-button.sop-black:hover {
+	background-color: rgb(100,100,80);
+	color: #FFF;
+}
+.sop-white .sop-wrapper,
+.sop-trigger.sop-button.sop-white {
+	background-color: #FFF;
+	color: #000;
+}
+.sop-white.sop-trans .sop-wrapper {
+	background: rgba(255,255,255,0.95);
+}
+.sop-trigger.sop-button.sop-white:hover {
+	background-color: rgb(100,100,80);
+	color: #FFF;
+}
+.sop-teal .sop-wrapper,
+.sop-trigger.sop-button.sop-teal {
+	background-color: #6FA4A8;
+	color: #000;
+}
+.sop-teal.sop-trans .sop-wrapper {
+	background: rgba(114,161,168,0.95);
+}
+.sop-trigger.sop-button.sop-teal:hover {
+	background-color: rgb(100,100,80);
+	color: #FFF;
+}
+.sop-blue .sop-wrapper,
+.sop-trigger.sop-button.sop-blue {
+	background-color: #699EBB;
+	color: #000;
+}
+.sop-blue.sop-trans .sop-wrapper {
+	background: rgba(75,130,170,0.95);
+}
+.sop-trigger.sop-button.sop-blue:hover {
+	background-color: rgb(100,100,80);
+	color: #FFF;
+}
+
+
+/*Triggers*/
+.sop-trigger {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.sop-trigger.sop-trig-light {
+	color: #FFF;
+}
+.sop-trigger.sop-trig-dark {
+	color: #000;
+}
+.sop-trigger:hover {
+	border-bottom: 1px solid;
+}
+.sop-trigger.sop-button {
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgb(180,180,160);
+	color: #000;
+	border: none;
+}
+.sop-trigger.sop-button:hover {
+	background-color: rgb(100,100,80);
+	color: #FFF;
+}
+.sop-trigger.sop-button.sop-borders {
+	border: 1px solid;
+}
+
+.sop-trigger.sop-inline {
+	display: inline-block;
+	padding: 5px 10px;
+}
+.sop-trigger.sop-block {
+	display: block;
+}
+.sop-glass {
+	-webkit-box-shadow: 
+	0 1px 0px rgba(0,0,0,0.75),
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 10px 0px rgba(255,255,255,0.2), 
+	inset 0 10px 30px rgba(255,255,255,0.25), 
+	inset 0 -5px 30px rgba(0,0,0,0.3);
+	        box-shadow: 
+	0 1px 0px rgba(0,0,0,0.75),
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 10px 0px rgba(255,255,255,0.2), 
+	inset 0 10px 30px rgba(255,255,255,0.25), 
+	inset 0 -5px 30px rgba(0,0,0,0.3);
+}
+.sop-shadow.sop-glass {
+	-webkit-box-shadow:
+	5px 5px 10px 0px rgba(0,0,0,0.6),
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 10px 0px rgba(255,255,255,0.2), 
+	inset 0 10px 30px rgba(255,255,255,0.25), 
+	inset 0 -5px 30px rgba(0,0,0,0.3);
+	        box-shadow:
+	5px 5px 10px 0px rgba(0,0,0,0.6),
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 10px 0px rgba(255,255,255,0.2), 
+	inset 0 10px 30px rgba(255,255,255,0.25), 
+	inset 0 -5px 30px rgba(0,0,0,0.3);
+}
+.sop-animate.sop-glass:hover {
+	-webkit-box-shadow: 
+	0 1px 0px rgba(0,0,0,0.75),
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 20px 0px rgba(255,255,255,0.2), 
+	inset 0 10px 30px rgba(255,255,255,0.25), 
+	inset 0 -5px 30px rgba(0,0,0,0.3);
+	        box-shadow: 
+	0 1px 0px rgba(0,0,0,0.75),
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 20px 0px rgba(255,255,255,0.2), 
+	inset 0 10px 30px rgba(255,255,255,0.25), 
+	inset 0 -5px 30px rgba(0,0,0,0.3);
+}
+.sop-trigger.sop-animate {
+	-webkit-transition: all linear .3s 0s;
+	transition: all linear .3s 0s;
+}
+.sop-rounded {
+	border-radius: 5px;
+}
+.sop-button.pbx-rounded {
+	border-radius:  5px;
+}
+/*No Script */
+.p7SOP.sop-noscript .sop-close-icon {
+	display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+	.p7SOP { max-width: 100% !important; }
+}
+

@@ -1,0 +1,45 @@
+/* CSS Document */
+
+.keesstyle {
+  
+  font-size: 50px;
+}
+.nav-item{
+  font-size: 24px;
+}
+.colshadow {
+-webkit-box-shadow: 0px 10px 12px -7px rgba(0,0,0,0.75);
+        box-shadow: 0px 10px 12px -7px rgba(0,0,0,0.75);
+}
+.w-24{
+  width:24%;
+}
+.card{
+  position: relative;
+}
+.card-text{
+  padding-bottom:3rem;
+}
+.card-body a{
+  position: absolute;
+  bottom:20px!important;
+}
+
+.mywrapper{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-gap: 1em;
+  margin:1em;
+}
+.mywrapper > div{
+  background: #dddddd;
+  padding:1em;
+}
+.mywrapper > div:nth-child(odd){
+  background: #222;
+  color: #fff;
+}
+div.hmy-content.hmy-left.kaartje {
+  
+  color: #000;
+}
